@@ -1,6 +1,8 @@
-# XRPL transaction exporter [![npm version](https://badge.fury.io/js/xrpl-tx-export.svg)](https://badge.fury.io/js/xrpl-tx-export) [![](https://data.jsdelivr.com/v1/package/npm/xrpl-tx-export/badge)](https://cdn.jsdelivr.net/npm/xrpl-tx-export/dist/xrpl-tx-export.js)
+# XRPL transaction exporter (condensed output*)
 
-This small node app fetches all transactions for an account and returns the results in CSV (when called from the command line) or as a parsed object (when used as a node module).
+This small node app fetches all transactions for an account and returns the results in CSV (when called from the command line) or as a parsed object (when used as a node module). 
+
+* In comparison with the original app, this version utilizes the xrpl-client library and fewer columns are exported.
 
 Uses [xrplcluster.com](https://xrplcluster.com) full history nodes.
 
@@ -8,15 +10,12 @@ Uses [xrplcluster.com](https://xrplcluster.com) full history nodes.
 
 ### Exported columns:
 
-- ledger (XRPL Ledger Index)
+- date
 - direction (sent, received, other (eg. async DEX trading result))
 - txtype (XRPL Transaction Type)
-- date
 - currency (XRP or ISSUER.CURRENCY)
 - amount (amount in XRP (not drops) or IOU)
 - is_fee
-- fee (fee in XRP, chraged to own account)
-- hash
 
 # Run: commandline (to CSV)
 
