@@ -26,7 +26,7 @@ Uses [xrplcluster.com](https://xrplcluster.com) full history nodes.
 If you are new to anything code / nodejs related:
 
 1. Install nodejs, `2:30` @ https://www.youtube.com/watch?v=9gVK6fp3UOo
-2. Download this source: https://github.com/WietseWind/xrpl-tx-exporter-csv/archive/refs/heads/main.zip
+2. Download this source: https://github.com/AlexanderKriz/xrpl-tx-exporter-csv/archive/refs/heads/main.zip
 3. Extract the ZIP and open your commandline, navigate to the folder where you extracted the ZIP
 4. Type: `npm install`
 5. Run (see below)
